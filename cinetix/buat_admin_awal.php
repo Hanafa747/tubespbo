@@ -1,5 +1,5 @@
 <?php
-// Jalankan satu kali melalui browser: http://localhost/CineTix_Web/buat_admin_awal.php
+// Jalankan satu kali melalui browser: http://localhost/cinetix/buat_admin_awal.php
 // Setelah selesai, HAPUS file ini dari folder proyek.
 require __DIR__ . '/config/database.php';
 
