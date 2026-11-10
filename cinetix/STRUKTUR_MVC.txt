@@ -1,0 +1,27 @@
+STRUKTUR MVC CINETIX
+
+config/
+- database.php: koneksi PDO ke database cinetix.
+- entities.php: konfigurasi enam tabel dan atribut CRUD.
+
+models/
+- AuthModel.php: autentikasi admin/user dan registrasi.
+- CrudModel.php: operasi database dasar.
+- FilmModel.php: pencarian, filter genre, detail, dan jadwal film.
+
+controllers/
+- AuthController.php: validasi login dan registrasi.
+- BookingController.php: proses pemesanan tiket.
+- CrudController.php: proses tambah, ubah, hapus, upload poster.
+- DashboardController.php: statistik dashboard admin.
+
+views/
+- home.php: dashboard katalog film.
+- film-detail.php: detail film dan jadwal.
+- auth.php: halaman login dan registrasi.
+- admin-dashboard.php: dashboard administrator.
+- manage.php: halaman CRUD seluruh tabel.
+- partials/: header dan footer.
+
+index.php
+- Mengatur routing dan menghubungkan Model, Controller, dan View.
