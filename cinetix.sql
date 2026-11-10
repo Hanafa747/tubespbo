@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2026 at 08:47 AM
+-- Generation Time: Nov 10, 2026 at 03:26 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,6 +34,13 @@ CREATE TABLE `admin` (
   `password` varchar(255) NOT NULL,
   `tanggal_dibuat` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id_admin`, `nama_admin`, `username`, `password`, `tanggal_dibuat`) VALUES
+(1, 'Administrator', 'admin', '$2y$10$yyRsSElnGLKcufVlIl4aU.iAYejRQ8H681Mve.9dDRs86B2gtB0bW', 0);
 
 -- --------------------------------------------------------
 
@@ -162,7 +169,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `akun`

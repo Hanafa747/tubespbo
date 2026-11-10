@@ -39,8 +39,8 @@
     <div class="side-caption">MENU UTAMA</div>
     <a class="<?= ($page ?? '') === 'admin' ? 'selected' : '' ?>" href="index.php?page=admin"><span>⌂</span> Dashboard</a>
     <div class="side-caption space-top">PENGELOLAAN DATA</div>
-    <?php foreach ($entities as $key => $cfg): ?>
-        <a class="<?= (($page ?? '') === 'manage' && ($entity ?? '') === $key) ? 'selected' : '' ?>" href="index.php?page=manage&entity=<?= e($key) ?>"><span>▦</span> <?= e($cfg['title']) ?></a>
+    <?php foreach ($entities as $key => $navCfg): ?>
+        <a class="<?= (($page ?? '') === 'manage' && ($entity ?? '') === $key) ? 'selected' : '' ?>" href="index.php?page=manage&entity=<?= e($key) ?>"><span>▦</span> <?= e($navCfg['title']) ?></a>
     <?php endforeach; ?>
     <div class="sidebar-bottom"><span class="admin-dot"></span> Administrator</div>
 </aside>
